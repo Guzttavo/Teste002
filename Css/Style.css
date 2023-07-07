@@ -1,0 +1,158 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ 
+@font-face{
+  font-family: 'small' ;
+  src: url("/MOBILE-MENU/fontes/Smallville1.ttf") format(truetype);
+  font-weight: normal;
+  
+}
+body{
+  background-color: #2a2b38;
+}
+*{
+  margin: 0;
+  padding: 0;
+  
+ 
+} 
+
+ 
+/* Aparecia da barra de navegação aberta */
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  /* links escondidos (exceto para logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Aparecia dos links (fonte,cor,tamanho etc) */
+  .topnav a {
+    color: rgb(200, 200, 200);
+    padding: 14px 16px;
+    text-decoration: none; /*Tira a cor azul de um  ink */
+    font-size: 17px;
+    display: block;
+    font-family: 'small', sans-serif;
+   
+  }
+
+  /* aparencia do icone do menu  */
+  .topnav a.icon {
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* aparencia  do background do efeito houver (quando o mouse passa por cima ) */
+  .topnav a:hover {
+    background-color: #2f06fd;
+    color: rgb(255, 255, 255);
+  }
+/* foto da marvel */
+ .ftmarvel img{
+  width: 100%;
+ 
+ }
+   nav a{
+    font-family: 'small', sans-serif;
+    text-decoration:none;
+    color: #eeeeeead;
+   
+  }
+   /* aparencia do menu (or home/logo) */
+   .active {
+
+    background-color: #000000;
+    color: white;
+  }
+  
+   .footer-arrow {
+    
+  float:left ;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.footer-arrow svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+  background-color: #000000;
+}
+.footer-arrow .shape-fill {
+  fill: #2a2b38;;
+}
+.main_footer          { background-color:#000000; color:#fff; font-size:1em; }
+.main_footer .content { float:left; width:80%; margin:0 10%; padding: 5em 0; }
+.container { float:left; width:100%; }
+.colfooter { 
+
+width:100%; 
+height:auto; 
+float:left; 
+margin-bottom:2em;
+}
+.colfooter ul        { width:100%; float:left; }
+.colfooter ul li     { padding:0.2em 0em; }
+.colfooter ul li a   { text-decoration:none; color:#ffffff; font-size:1em; transition:0.2s; }
+.colfooter ul li a i { font-size:0.5em; }
+.colfooter ul li a:hover { color:#ffffff; }
+.colfooter .titleFooter   { 
+font-family: 'Lato', sans-serif; 
+font-size:1.3em; 
+color:#ffffff; 
+padding-bottom: 0.5em; 
+margin-bottom:0.5em; 
+border-bottom: 1px #ff1010 solid;/*COr da linha entre o titulo da coluna e o conteudo*/
+}
+.colfooter p  { 
+font-family: 'Lato', sans-serif; 
+color:#ffffff; 
+font-size:1em; 
+height:25px; 
+}
+.colfooter .redesocial { 
+  
+  color: #ffffff;
+  float: left;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  transition:0.2s;
+}
+.colfooter .redesocial:hover { 
+  
+  color: #ffffff;
+  transition:0.2s;
+}
+.main_footer_copy   { background-color:#000000; width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p { font-size:1em; color:#ffffff; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by a       { color:#ffffff; text-decoration:none; font-weight:600; transition:0.2s; }
+.main_footer_copy .by a:hover { text-decoration:underline; color:#da1a1a }/*Cor dos 4m*/
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+/*Responsivo*/
+/*768PX BREAKPOINT*/
+@media (min-width:48em){
+
+.colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
+.colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
+.footer-arrow svg { height:50px; }
+}
+/*960PX BREAKPOINT*/
+@media (min-width:60em){
+.footer-arrow svg { height:70px; }
+}
+/*1280PX BREAKPOINT*/
+@media (min-width:80em){
+.footer-arrow svg { height:90px; }
+}
